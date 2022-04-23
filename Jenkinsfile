@@ -5,8 +5,7 @@ pipeline {
       parallel {
         stage('check version') {
           steps {
-            sh '''npm -v
-node -v'''
+            sh 'npm -v'
           }
         }
 
