@@ -9,7 +9,7 @@ pipeline {
 
     stage('Verify tool versions') {
       steps {
-        bat(script: 'npm --version', returnStatus: true, returnStdout: true)
+        bat(script: 'npm --version && node --version', returnStatus: true, returnStdout: true)
       }
     }
 
