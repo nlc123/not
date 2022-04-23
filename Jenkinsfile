@@ -9,7 +9,7 @@ pipeline {
 
     stage('Verify tool versions') {
       steps {
-        sh '$npm --version'
+        bat 'npm --version'
       }
     }
 
