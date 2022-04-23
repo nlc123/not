@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('build NOT app') {
+    stage('Check package json') {
       steps {
-        sh 'npm run build'
+        fileExists 'package.json'
       }
     }
 
